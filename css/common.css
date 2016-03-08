@@ -162,7 +162,7 @@ video#bgvid {
 	float: left;
 	margin: 0 15px;
 	padding: 5px 0;
-	width: 25%;	
+	width: 100%;	
 }
 
 /* Y-Axis */
@@ -194,10 +194,10 @@ video#bgvid {
 }
 .bar-group {
 	float: left;
-	height: 100%;
-	margin: 0 15px;
-	position: relative;
-	width: 25%;
+    height: 100%;
+    margin-left: 15px;
+    position: relative;
+    width: 100%;
 }
 .bar {
 	border-radius: 2px 2px 0 0;
@@ -206,25 +206,25 @@ video#bgvid {
 	height: 0;
 	position: absolute;
 	text-align: center;
-	width: 15%;
+	width: 10%;
 }
 .bar.fig0 {
 	left: 0;
 }
 .bar.fig1 {
-	left: 17%;
+	left: 16%;
 }
 .bar.fig2 {
-	left: 35%;
+	left: 33%;
 }
 .bar.fig3 {
-	left: 52%;
+	left: 50%;
 }
 .bar.fig4 {
-	left: 68%;
+	left: 67%;
 }
 .bar.fig5 {
-	left: 85%;
+	left: 84%;
 }
 .bar span {
 	background: #fefefe;
