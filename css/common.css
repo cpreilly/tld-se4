@@ -162,7 +162,7 @@ video#bgvid {
 	float: left;
 	margin: 0 15px;
 	padding: 5px 0;
-	width: 100%;	
+	width: 10%;	
 }
 
 /* Y-Axis */
@@ -229,7 +229,7 @@ video#bgvid {
 .bar span {
 	background: #fefefe;
 	border-radius: 3px;
-	left: -8px;
+	left: 20%;
 	display: none;
 	margin: 0;
 	position: relative;
