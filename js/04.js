@@ -1,14 +1,3 @@
-/**
- *	Animated Graph Tutorial for Smashing Magazine
- *	July 2011
- *   
- * 	Author:	Derek Mack
- *			derekmack.com
- *			@derek_mack
- *
- *	Example 4 - Animated Bar Chart via CSS Transitions (WebKit Only)
- */
-
 // Wait for the DOM to load everything, just to be safe
 $(document).ready(function() {
 
@@ -60,7 +49,7 @@ $(document).ready(function() {
 			chartYMax: function() {
 				var chartData = this.chartData();
 				// Round off the value
-				var chartYMax = Math.ceil(Math.max.apply(Math, chartData) / 1000) * 1000;
+				var chartYMax = Math.ceil(Math.max.apply(Math, chartData) / 100) * 100;
 				return chartYMax;
 			},
 			// Get y-axis data from table cells
@@ -68,10 +57,10 @@ $(document).ready(function() {
 				var chartYMax = this.chartYMax();
 				var yLegend = [];
 				// Number of divisions on the y-axis
-				var yAxisMarkings = 5;						
+				var yAxisMarkings = 5;
 				// Add required number of y-axis markings in order from 0 - max
 				for (var i = 0; i < yAxisMarkings; i++) {
-					yLegend.unshift(((chartYMax * i) / (yAxisMarkings - 1)) / 1000);
+					yLegend.unshift(((chartYMax * i) / (yAxisMarkings - 1)) / 1);
 				}
 				return yLegend;
 			},

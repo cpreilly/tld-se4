@@ -25,12 +25,32 @@ h4 {
 a {
 	color: #333;
 }
-
+/* BG VID */
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../video/se4.jpg) no-repeat;
+    background-size: cover; 
+}
+.logo{
+	opacity:.5;
+	margin-top:50px;
+}
 /* Table */
 #data-table {
 	border: none; /* Turn off all borders */
 	border-top: 1px solid #ccc;
-	width: 540px;
+	width: 100%;
 }
 #data-table caption {
 	color: #545454;
@@ -84,16 +104,18 @@ a {
 /* Containers */
 #wrapper {
 	margin: 0 auto;
-	width: 540px;
+	width: 600px;
+	text-align: center;
 }
 #figure {
-	height: 380px;
+	height: 400px;
 	position: relative;
 }
 #figure ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	text-align: center;
 }
 .graph {
 	height: 283px;
@@ -107,16 +129,16 @@ a {
 	bottom: 0;
 	position: absolute;
 	text-align: left;
-	width: 540px;	
+	width: 100%;	
 }
 .legend li {
-	display: block;
-	float: left;
+	display: inline-block;
 	height: 20px;
 	margin: 0;
-	padding: 10px 30px;
-	width: 120px;
+	padding: 10px;
+	width: 27%;
 	color:#666666;
+	text-align: left;
 }
 .legend span.icon {
 	background-position: 50% 0;
@@ -134,13 +156,13 @@ a {
 	color: #555;
 	position: absolute;
 	text-align: center;
-	width: 540px;
+	width: 100%;
 }
 .x-axis li {
 	float: left;
 	margin: 0 15px;
 	padding: 5px 0;
-	width: 76px;	
+	width: 25%;	
 }
 
 /* Y-Axis */
@@ -175,25 +197,34 @@ a {
 	height: 100%;
 	margin: 0 15px;
 	position: relative;
-	width: 76px;
+	width: 25%;
 }
 .bar {
-	border-radius: 3px 3px 0 0;
+	border-radius: 2px 2px 0 0;
 	bottom: 0;
 	cursor: pointer;	
 	height: 0;
 	position: absolute;
 	text-align: center;
-	width: 24px;
+	width: 15%;
 }
 .bar.fig0 {
 	left: 0;
 }
 .bar.fig1 {
-	left: 26px;
+	left: 17%;
 }
 .bar.fig2 {
-	left: 52px;
+	left: 35%;
+}
+.bar.fig3 {
+	left: 52%;
+}
+.bar.fig4 {
+	left: 68%;
+}
+.bar.fig5 {
+	left: 85%;
 }
 .bar span {
 	background: #fefefe;
@@ -223,7 +254,6 @@ min-width: 350px;
 margin: 0 auto;
 box-sizing: border-box;
 padding: 15px;
-width: 50%;
 }
 
 .ctct-custom-form input[type="text"] {
@@ -239,6 +269,13 @@ line-height: 1.5;
 background: #666666;
 }
 
+@media (max-width: 768px) {
+#wrapper {
+    width: auto;
+    padding: 15px;
+}
+.logo {width:100%;}
+}
 
 
 
